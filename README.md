@@ -3,6 +3,8 @@ Use Netmiko Framework to update IOS of Cisco 2960X Switches and up to 4 Stacks.
 
 Author: nouse4it <github@schlueter-online.net>
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/nouse4it/netmiko_IOS_Update)
+
 IOS_update_threating_w_stack.py
 Illustrate the following conecepts:
 - Fully automate Update process of IOS on given IOS-based Switch

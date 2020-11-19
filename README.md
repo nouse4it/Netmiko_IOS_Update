@@ -1,5 +1,5 @@
 # netmiko_IOS_Update
-Use Netmiko Framework to update IOS of Cisco 2960X Switches and up to 4 Stacks.
+Use Netmiko Framework to update IOS of Cisco 2960X Switches (incl. up to 4 Stacks) and IOS-XE Switches (f.e. Cat9300L)
 
 Author: nouse4it <github@schlueter-online.net>
 

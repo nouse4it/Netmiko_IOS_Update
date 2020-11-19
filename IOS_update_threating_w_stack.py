@@ -1,6 +1,6 @@
 """
 Category: Python Config Script
-Author: Benjamin Schlüter <benjamin.schlueter@hirschvogel.com>
+Author: nouse4it <github@schlueter-online.net>
 
 IOS_update_threating_w_stack.py
 Illustrate the following conecepts:

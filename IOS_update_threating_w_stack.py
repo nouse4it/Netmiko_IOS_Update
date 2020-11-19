@@ -4,15 +4,17 @@ Author: Benjamin Schlüter <benjamin.schlueter@hirschvogel.com>
 
 IOS_update_threating_w_stack.py
 Illustrate the following conecepts:
-- Upload of IOS Software of given IOS-based Switch, Set Reboot to given Time (no immediate reboot)
+- Upload of IOS Software of given IOS-based Switch and reboot
 -- Including 2960x-Stacks
 - Process handling happend parallel by threating
 - Including MD5-Check after copy of Software to Switch to ensure integrity
+- New feature, support of Cisco IOS-XE Device like Cat9300L
+-- Stacks supported aswell
 """
 
-__author__ = "Benjamin Schlüter"
-__author_email__ = "benjamin.schlueter@hirschvogel.com"
-__copyright__ = "Copyright (c) 2020 Benjamin Schlüter (ITT4 / Hirschvogel Holding GmbH)"
+__author__ = "nouse4it"
+__author_email__ = "github@schlueter-online.net"
+__copyright__ = "Copyright (c) 2020 nouse4it "
 
 # Importing all needed Modules
 import netmiko
@@ -22,6 +24,7 @@ from pprint import pprint
 import json
 import threading
 import time
+import getpass
 
 #------------------------------------------------------------------------------
 def check_md5(filename):
@@ -277,9 +280,10 @@ def command_worker( device, creds ):
 
 file_s = input("Enter Image Filename: ")
 username = input("Enter Usernamen: ")
-password = input("Enter Password: ")
+password = getpass.getpass(prompt ="Enter Password: ")
+devices_file = input("Enter devices_file location: ")
 
-devices = read_devices( '/home/schlueterbe/config_files/netmiko/devices_file' )
+devices = read_devices( devices_file )
 creds   = (username, password)
 
 config_threads_list = []

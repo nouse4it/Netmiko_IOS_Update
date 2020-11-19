@@ -13,7 +13,46 @@ Illustrate the following conecepts:
 - Including MD5-Check after copy of Software to Switch to ensure integrity
 - When update finished, reload device
 
-You need to fill the devices-file with the needed information of the switches you want to update.
-After this run the main script and put in the name of the update file (needs to be in same location as the script), your username and password, when prompted for.
-Leave the rest up to the script.
-"""
+## Use Case Description
+
+The script is intended to automatically update IOS and IOS-XE based devices.
+The script is able to perform the update on multiple devices in parallel. This makes it possible to run an OS update on many devices at once and ensures that the update process is automated and therefore always runs the same.
+
+## Installation
+Pleae use Netmiko at least 2.4.2 ---> pip install netmiko
+Netmiko has the following requirements (which pip will install for you)
+
+    Paramiko >= 2.4.3
+    scp >= 0.13.2
+    pyserial
+    textfsm
+For more informations see ---> https://pypi.org/project/netmiko/
+
+Python Version must be at least v3.6
+
+## Usage
+Modifiy the variable `<devices = read_devices('path-to-devices_file')>`
+
+After done so need to fill the devices_file with the needed information of the switches you want to update.
+
+Use `<IP-Addresse,device-type (f.e. cisco-ios),hostname>`
+
+When this files are prepared, run the main script and put in the asked infos:
+* Filename (file needs to be located in same file as script)
+* Username
+* Password
+
+Leave the rest up to the script ;-)
+
+## Getting help
+
+For more help about netmiko please go to https://pynet.twb-tech.com/blog/automation/netmiko.html or https://github.com/ktbyers/netmiko
+
+## Credits and references
+1. @ktbyers and the Netmiko Library
+2. Cisco DevNet Course of @hpreston
+3. David Bombals Network Automation Course on Udemy
+
+## Licensing info
+
+Please see [LICENSE](http://github.com/nouse4it/netmiko_IOS_Update/edit/develop/LICENSE)

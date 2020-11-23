@@ -1,1 +1,5 @@
-<IP-Address>,cisco-ios,<Hostname>
+<IP-Address>,<device-type f.e. cisco-ios or cisco-xe>,<Hostname>
+
+example:
+
+10.1.1.1.,cisco-ios,Switch-01

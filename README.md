@@ -22,6 +22,7 @@ The script is able to perform the update on multiple devices in parallel. This m
 Pleae use Netmiko at least 2.4.2 ---> pip install netmiko
 Netmiko has the following requirements (which pip will install for you)
 
+    Netmiko >= 2.4.2
     Paramiko >= 2.4.3
     scp >= 0.13.2
     pyserial
@@ -30,12 +31,15 @@ For more informations see ---> https://pypi.org/project/netmiko/
 
 Python Version must be at least v3.6
 
+I also added you requirements.txt, where you can find all dependencies --> [REQUIREMENTS](https://github.com/nouse4it/netmiko_IOS_Update/blob/master/requirements.txt)
+
+PLEASE MAKE NOTE THAT THIS SCRIPT ONLY LEVERAGES NETMIKO! THERE IS NO NORNIR OR OTHER FRAMEWORK IN USE!
+
 ## Usage
 Modifiy the variable `<devices = read_devices('path-to-devices_file')>`
 
-After done so need to fill the devices_file with the needed information of the switches you want to update.
-
-Use `<IP-Addresse,device-type (f.e. cisco-ios),hostname>`
+After done so, you need to update the devices_file with the needed information of the switches you want to update.
+Use `<IP-Address>,<device-type (f.e. cisco-ios or cisco-xe)>,<hostname>`
 
 When this files are prepared, run the main script and put in the asked infos:
 * Filename (file needs to be located in same file as script)
@@ -55,4 +59,4 @@ For more help about netmiko please go to https://pynet.twb-tech.com/blog/automat
 
 ## Licensing info
 
-Please see [LICENSE](http://github.com/nouse4it/netmiko_IOS_Update/edit/develop/LICENSE)
+Please see [LICENSE](https://github.com/nouse4it/netmiko_IOS_Update/blob/master/LICENSE)

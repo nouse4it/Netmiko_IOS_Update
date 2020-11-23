@@ -31,7 +31,7 @@ For more informations see ---> https://pypi.org/project/netmiko/
 
 Python Version must be at least v3.6
 
-I also added you requirements.txt, where you can find all dependencies --> [REQUIREMENTS](https://github.com/nouse4it/netmiko_IOS_Update/blob/master/requirements.txt)
+I also added you requirements.txt, where you can find all dependencies --> [REQUIREMENTS](https://github.com/nouse4it/netmiko_IOS_Update/blob/master/REQUIREMENTS.txt)
 
 PLEASE MAKE NOTE THAT THIS SCRIPT ONLY LEVERAGES NETMIKO! THERE IS NO NORNIR OR OTHER FRAMEWORK IN USE!
 

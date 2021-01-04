@@ -5,7 +5,7 @@ Author: nouse4it <github@schlueter-online.net>
 IOS_update_threating_w_stack.py
 Illustrate the following conecepts:
 - Upload of IOS Software of given IOS-based Switch and reboot
--- Including 2960x-Stacks
+-- Including 2960x-Stacks or 9300L-Stacks
 - Process handling happend parallel by threating
 - Including MD5-Check after copy of Software to Switch to ensure integrity
 - New feature, support of Cisco IOS-XE Device like Cat9300L

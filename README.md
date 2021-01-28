@@ -1,9 +1,13 @@
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/nouse4it/netmiko_IOS_Update)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+
 # netmiko_IOS_Update
 Use Netmiko Framework to update IOS of Cisco 2960X Switches (incl. up to 4 Stacks) and IOS-XE Switches (f.e. Cat9300L)
 
 Author: nouse4it <github@schlueter-online.net>
-
-[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/nouse4it/netmiko_IOS_Update)
 
 IOS_update_threating_w_stack.py
 Illustrate the following conecepts:

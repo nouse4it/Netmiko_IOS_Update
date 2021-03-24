@@ -9,7 +9,7 @@ Use Netmiko Framework to update IOS of Cisco 2960X Switches (incl. up to 4 Stack
 
 Author: nouse4it <github@schlueter-online.net>
 
-IOS_update_threating_w_stack.py
+## IOS_update_threating_w_stack.py
 Illustrate the following conecepts:
 - Fully automate Update process of IOS on given IOS-based Switch
 -- Including 2960x-Stacks (tested with up to 4)
@@ -23,7 +23,7 @@ The script is intended to automatically update IOS and IOS-XE based devices.
 The script is able to perform the update on multiple devices in parallel. This makes it possible to run an OS update on many devices at once and ensures that the update process is automated and therefore always runs the same.
 
 ## Installation
-Pleae use Netmiko at least 2.4.2 ---> pip install netmiko
+Please use Netmiko at least 2.4.2 ---> pip install netmiko
 Netmiko has the following requirements (which pip will install for you)
 
     Netmiko >= 2.4.2
